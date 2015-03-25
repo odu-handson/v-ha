@@ -1,0 +1,120 @@
+#cgQBlog_content
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align:center;
+}
+
+#blogPosts, #blogActions 
+{
+	display: table-cell;
+}
+	
+#blogPosts
+{
+	width: 80%;
+	max-width: 460px;
+}
+
+#blogActions 
+{
+	vertical-align: top;
+	width: 20%;
+	max-width: 230px;
+}
+
+.dateLine 
+{
+	font-size: 0.8em;
+}
+
+#blogPosts .blog_post 
+{
+	/* padding: 1em;
+	border-radius: 5px;
+	width: 60%;
+	line-height: 1.5em;
+	margin-bottom: 2em;
+	box-shadow: 0px 0px 2px #444 */
+	
+	max-width: 440px;
+	
+	-webkit-border-top-left-radius: 8px;
+	-moz-border-top-left-radius: 8px;
+	border-top-left-radius: 8px;
+	
+	-webkit-border-top-right-radius: 8px;
+	-moz-border-top-right-radius: 8px;
+	border-top-right-radius: 8px;
+	
+	-webkit-border-bottom-left-radius: 6px;
+	-moz-border-bottom-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+	
+	-webkit-border-bottom-right-radius: 6px;
+	-moz-border-bottom-right-radius: 6px;
+	border-top-bottom-right-radius: 6px;
+	
+	display: inline-block;
+	position: relative;
+	text-align: left;
+	width: 90%;
+	margin: 10px;
+	
+	background: #fff;
+	
+}
+
+#blogPosts .blog_post span.title
+{
+	display: block;
+	opacity: 0.9;
+	background-color: brown;
+	color: lightgray;
+	font-weight: bold;
+	width: auto;
+	min-height: 30px;
+	-webkit-border-top-left-radius: 8px;
+	-moz-border-top-left-radius: 8px;
+	border-top-left-radius: 8px;
+	
+	-webkit-border-top-right-radius: 8px;
+	-moz-border-top-right-radius: 8px;
+	border-top-right-radius: 8px;
+	
+	padding: 5px;
+	margin-bottom: 10px;
+	font-size: 1.2em;
+	padding-left: 15px;
+}
+
+#blogPosts .blog_post p
+{
+	font-size: 1.2em;
+	padding: 10px;
+	color: darkgray;
+	font-weight: bold;
+}
+
+#blogPosts .blog_post #buttons_div
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	margin-top: 20px;
+	
+	border-top: 3px solid lightgray;
+}
+
+#blogPosts .blog_post #buttons_div span.answer, #blogPosts .blog_post #buttons_div span.push
+{
+	display: inline-block !important;
+	text-align: center;
+	color: #668B8B;
+	font-weight: bold;
+	padding: 10px;
+	cursor: pointer;
+	font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+}

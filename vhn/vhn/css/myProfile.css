@@ -1,0 +1,46 @@
+#user_update_form
+{
+	width: 90%;
+	max-width: 600px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background-color: #fff;
+	color: gray;
+	padding: 10px;
+}
+
+#user_update_form span
+{
+	width: 50%;
+	min-width: 300px;
+	max-width: 300px;
+	float:left;
+	font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+	padding: 10px;
+	font-weight: bold;
+}
+
+#user_update_form input[type="text"], #user_update_form input[type="password"]
+{
+	width: 50%;
+	padding: 10px;
+	min-width: 250px;
+	max-width: 250px;
+	font-size: .9em !important;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+#buttons_div input[type="button"]
+{
+	font-size: 1em;
+	font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+	height: 30px;
+	width: 300px !important;
+	max-width: 200px !important;
+	padding: 5px;
+	
+	color: green;
+}

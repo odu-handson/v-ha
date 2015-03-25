@@ -1,0 +1,149 @@
+#mainPageContent
+{
+	padding: 1%;
+	width: 98%;
+	margin: 0 auto;
+	/* border: solid red 2px; */
+	display: table-row;
+	text-align: center;
+}
+
+#mainPageContent #right_hand_img, #mainPageContent #left_hand_img
+{
+	width: 15%;
+}
+
+#mainPageContent #content
+{
+	/* border: solid green 2px; */ 
+	width: 60%;
+	vertical-align: top;
+	text-align: center !important;
+	align : center;
+}
+
+#mainPageContent #right_hand_img, #mainPageContent #left_hand_img, #mainPageContent #content
+{
+	display: table-cell;
+	height: 100%;
+}
+
+#mainPageContentMobile #right_hand_img, #mainPageContentMobile #left_hand_img
+{
+	width: 15%;
+}
+
+#mainPageContentMobile #welcometext
+{
+	width: 70%;
+	text-align: center;
+}
+
+#mainPageContentMobile #right_hand_img, #mainPageContentMobile #left_hand_img, #mainPageContentMobile #welcometext
+{
+	display: table-cell;
+	height: 100%;
+	vertical-align:top;
+	align: center;
+}
+
+#welcometext, #slider, #miform_div
+{
+	display: block;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#main_wrapper
+{
+	/* 
+	margin-left: auto;
+	margin-right: auto; */
+	
+	padding: 10px;
+	width: 96% !important;
+	margin: 10px auto;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	
+	-webkit-box-shadow: 0 0 10px #fff ;
+	-moz-box-shadow: 0 0 10px #fff ;
+	box-shadow: 0 0 10px #fff ;
+	
+	background-color: #fff;
+	overflow: hidden;
+}
+
+.page_title
+{
+	color: rgb(137,137,186);
+	padding: 10px;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	text-align: left;
+	margin-left: 10%;
+	margin-top: 5px;
+}
+
+#welcometext
+{
+	font-size: 1.2em;
+	font-style: italic;
+	font-weight: bold;
+	color: rgb(137,137,186);
+}
+
+#slider
+{
+	width: 90%;
+	position: relative;
+	overflow: hidden;
+	text-align:center;
+	min-height: 570px;
+}
+
+#slider #slider_img
+{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	border: solid purple 2px;
+	border-radius: 10px;
+}
+
+/************** Slider CSS ************/
+
+#ticker
+{
+	height: 49px;
+}
+
+#slider_img
+{
+	margin: auto;
+	height: 100%;
+	max-width: 700px;
+	max-height: 500px;
+}
+
+.profile_pic
+{
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	/* background: url(http://link-to-your/image.jpg) no-repeat; */
+}
+
+.email_button
+{
+	background: url("../images/emailIcon.png") no-repeat;
+	background-size: contain;
+	cursor:pointer;
+	border: none;
+	width: 36px;
+	height: 36px;
+}

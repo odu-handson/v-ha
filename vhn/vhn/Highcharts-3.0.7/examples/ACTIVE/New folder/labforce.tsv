@@ -1,0 +1,7 @@
+stfips	statename	areatype	areatyname	area	areaname	periodyear	periodtype	pertypdesc	period	adjusted	prelim	benchmark	laborforce	emplab	unemp	unemprate
+51	Virginia	01	State	000000	Virginia	1990	01	Annual	00	0	0	9999	3220123	3076928	143195	4.4
+51	Virginia	01	State	000000	Virginia	1990	03	Monthly	01	0	0	9999	3157171	3014641	142530	4.5
+51	Virginia	01	State	000000	Virginia	1990	03	Monthly	02	0	0	9999	3159369	3026003	133366	4.2
+51	Virginia	01	State	000000	Virginia	1990	03	Monthly	03	0	0	9999	3181909	3059664	122245	3.8
+51	Virginia	01	State	000000	Virginia	1990	03	Monthly	04	0	0	9999	3178041	3060056	117985	3.7
+51	Virginia	01	State	000000	Virginia	1990	03	Monthly	06	0	0	9999	3254800	3115136	139664	4.3

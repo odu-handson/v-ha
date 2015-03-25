@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Highcharts Example</title>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript">	
+			var options = {
+				chart: {
+					zoomType: 'x',
+					type: 'spline'
+				},
+				title: {
+					text: 'Wind speed during two days'
+				},
+				legend: {
+					layout: 'vertical',
+					align: 'left',
+					verticalAlign: 'top',
+					x: 150,
+					y: 100,
+					floating: true,
+					borderWidth: 1,
+					backgroundColor: '#FFFFFF'
+				},
+				xAxis: {
+					type: 'datetime',
+					maxZoom: 14 * 24 * 3600000 * 30,
+					categories: []
+				},
+				yAxis: {
+					title: {
+						text: 'Wind speed (m/s)'
+					},
+					min: 0,
+					minorGridLineWidth: 0,
+					gridLineWidth: 1,
+					alternateGridColor: null
+				},
+				tooltip: {
+					valueSuffix: ' m/s'
+				},
+				plotOptions: {
+					spline: {
+						lineWidth: 3,
+						states: {
+							hover: {
+								lineWidth: 5
+							}
+						},
+						marker: {
+							enabled: false
+						}//,
+						//pointInterval: 1, // one hour
+						//pointStart: Date.UTC(2009, 9, 6, 0, 0, 0)
+					}
+				},
+				series: [],
+				navigation: {
+					menuItemStyle: {
+						fontSize: '10px'
+                }
+            }
+				
+			};
+		$.get('labforce.tsv', function(data) {
+		// Split the lines
+		
+			alert();
+			var lines = data.split('\r\n');						var namelist=['Virginia'];			var xnum;			var ynum;
+			var tracklist={
+							name: "areaname",
+							year: "periodyear",
+							type: "periodtype",
+							month: "period", 
+							values: "laborforce"
+						};			//var tracklist=["areaname", "periodyear", "periodtype", "period", "laborforce"];			var tracker = {};						var elements = {};						/*var value = {						name: names,                						data: []					};*/						$.each(namelist, function(nameNo, names){				elements[names]=[];							});
+			
+			var type =3;			
+			var dummy = tracklist;			// Iterate over the lines and add categories or series			$.each(lines, function(lineNo, line) {
+				var items = line.split('\t');				
+				// header line containes categories
+				if (lineNo == 0) {
+					$.each(items, function(itemNo, item) {						$.each(tracklist, function(trackNo, track) {							if (item == track) {								tracker[item]=itemNo;								//tracklist.splice(trackNo, 1);									return false;															}						});
+						//if (itemNo > 0) options.xAxis.categories.push(item);
+					});
+					tracklist = dummy;
+					return false;
+				}
+					
+			});
+			for (var i = 1; i < lines.length; i++) {			
+				var items = lines[i].split('\t');	
+				
+				$.each(elements, function(elKey, elVal) {
+					console.log(items[tracker[tracklist.type]]);
+					if(items[tracker[tracklist.name]]==elKey && +items[tracker[tracklist.type]]==type){	
+						var valdata= [];
+						valdata.push(Date.UTC(+items[tracker[tracklist.year]], +items[tracker[tracklist.month]], 01, 0));
+						valdata.push(+items[tracker[tracklist.values]]);
+						
+						elVal.push(valdata);					
+						return false;
+					}			
+				});
+			}
+			
+			$.each(elements, function(elKey, elVal) {
+				var series = {
+						name: elKey,                
+						data: elVal
+					};
+				options.series.push(series);						
+			});
+			
+			// Create the chart
+			var chart = new Highcharts.Chart(options);
+		}, "text");
+	</script>
+	</head>
+	<body>
+	<script src="../../js/highcharts.js"></script>
+<script src="../../js/modules/exporting.js"></script>
+	<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+	</body>
+</html>

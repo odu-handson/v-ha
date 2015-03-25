@@ -1,0 +1,29 @@
+#contactus_div span
+{
+	display: block;
+	color: gray;
+	font-weight: bold;
+	font-size: 1.1em;
+	margin: 3px auto;
+	padding-top: 5px;
+}
+
+#contactus_div input[type="text"]
+{	
+	width: 50%;
+	margin-left: 0;
+	color: #111;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	height: 25px;
+	border: 2px inset;
+	width: 200px;
+	outline: none;
+}
+
+#contactus_div
+{
+	max-width: 320px;
+	margin: 0 auto;
+}

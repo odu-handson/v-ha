@@ -1,0 +1,194 @@
+body {
+	font-family: arial, sans-serif;
+	color: #222;
+}
+
+h1 {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-weight: 700;
+	font-size: 1.7em;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 1px #ccc;
+	padding-bottom: 0.5em;
+}
+
+#topMainNav {
+	height: 70px;
+	color: #fff;
+	border-bottom: 1px solid #fff;
+
+	/*********************************************
+		Gradient background
+	*********************************************/
+	/* fallback */
+	background-color: #099cbd;
+	background-image: url('../images/topMainNav_bg.gif');
+	background-position: center center;
+	background-repeat: no-repeat;
+
+	/* Safari 4-5, Chrome 1-9 */
+	/* Can't specify a percentage size? Laaaaaame. */
+	background: -webkit-gradient(radial, center center, 0, center center, 460, from(#19c3dd), to(#099cbd));
+
+	/* Safari 5.1+, Chrome 10+ */
+	background: -webkit-radial-gradient(circle, #19c3dd, #099cbd);
+
+	/* Firefox 3.6+ */ 
+	background: -moz-radial-gradient(circle, #19c3dd, #099cbd);
+
+	/* IE 10 */ 
+	background: -ms-radial-gradient(circle, #19c3dd, #099cbd);
+
+	/* Opera cannot do radial gradients yet */
+}
+
+#topMainNavLinks {
+	line-height: 70px;
+	width: 900px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#topMainNavLinks a {
+	padding: 0 0.5em;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-weight: 500;
+	font-size: 1.5em;
+	color: #fff;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 5px #444;
+}
+
+.socialImg {
+	float: right;
+	position: relative;
+	top: 19px;
+	padding: 0 0.2em;
+}
+
+#logoArea {
+	height: 350px;
+	color: #fff;
+
+	/*********************************************
+		Gradient background
+	*********************************************/
+	/* fallback */
+	background-color: #172526;
+	background-image: url('../images/logoArea_bg.gif');
+	background-position: center center;
+	background-repeat: no-repeat;
+
+	/* Safari 4-5, Chrome 1-9 */
+	/* Can't specify a percentage size? Laaaaaame. */
+	background: -webkit-gradient(radial, center center, 0, center center, 460, from(#32575a), to(#172526));
+
+	/* Safari 5.1+, Chrome 10+ */
+	background: -webkit-radial-gradient(circle, #32575a, #172526);
+
+	/* Firefox 3.6+ */ 
+	background: -moz-radial-gradient(circle, #32575a, #172526);
+
+	/* IE 10 */ 
+	background: -ms-radial-gradient(circle, #32575a, #172526);
+
+	/* Opera cannot do radial gradients yet */
+}
+
+#logoContent {
+	width: 950px;
+	margin: 0 auto;
+}
+
+#riggsLogo {
+	position: relative;
+	top: 20px;
+}
+
+#locations {
+	float: right;
+	padding-right: 1em;
+	line-height: 1.5em;
+	position: relative;
+	top: 30px;
+}
+
+#mainContentWrapper {
+	background: url('../images/body_bg.gif');
+	background-repeat: repeat-x;
+	background-color: #eee;
+}
+
+#mainContent {
+	background: #fff;
+	width: 900px;
+	padding: 2em;
+	margin: 0 auto;
+	position: relative;
+	top: -70px;
+	
+	/**********************************************
+		Rounded corners
+	**********************************************/
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px; /* future proofing */
+	-khtml-border-radius: 5px; /* for old Konqueror browsers */
+	
+	-moz-box-shadow: 0px 0px 25px #192829; 
+	-webkit-box-shadow: 0px 0px 25px #192829; 
+	box-shadow: 0px 0px 25px #192829; 
+}
+
+#textWrapper a, #textWrapper a:visited {
+	color: #00585e;
+	border-bottom: 1px dotted #00585e;
+}
+
+#textWrapper a:hover {
+	border: 0;
+}
+
+#textWrapper {
+	margin-top: 1em;
+	line-height: 1.5em;
+}
+
+#right_col {
+	padding-top: 0.5em;
+	float: right;
+	width: 300px;
+	border-left: 1px dotted #ccc;
+	padding-left: 25px;
+	background-color: #eee;
+}
+
+#left_col {
+	padding-top: 0.5em;
+	width: 550px;
+}
+
+#footerWrapper {
+	background: #192829;
+	padding: 2em;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-weight: 300;
+	font-size: 1em;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 1px #444;
+	line-height: 1.5em;
+}
+
+#footer {
+	width: 900px;
+	margin: 0 auto;
+	color: #fff;
+}
+
+#footer a:hover {
+	border-bottom: 1px solid #fff;
+}
+
+td {
+	width: 200px;
+}

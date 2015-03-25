@@ -1,0 +1,68 @@
+#virtual_support_content
+{
+	padding: 10px;
+	width :100%; 
+	
+	min-width: 400px;
+	margin: 0 auto; 
+	overflow:hidden;
+}
+
+#virtual_support_content .member_box
+{
+	
+	width: 100%;
+	background-color: #FFF !important;
+	margin-bottom:20px; 
+	background-color:grey; 
+	width :100%; 
+	overflow:hidden;
+	color: gray;
+	
+}
+
+#virtual_support_content .member_box div, #virtual_support_content .member_box
+{
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+#virtual_support_content .member_box div
+{
+	float: left;
+}
+
+#virtual_support_content .member_box .image_div
+{
+	width: 20%;
+	text-align: right;
+	overflow: hidden;
+}
+
+#virtual_support_content .member_box .image_div img, button
+{
+	display: table-cell;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+	min-width: 120px;
+}
+
+#virtual_support_content .member_box .details_div
+{
+	width: 70%;
+}
+
+#virtual_support_content .member_box .description_div
+{
+	width: 70%;
+	overflow: hidden;
+	font-size: 1.1em;
+}
+
+#virtual_support_content .member_box .details_div span
+{
+	display: block;
+}

@@ -1,0 +1,10 @@
+<select name="caregiver" id="caregiver" onChange="addNew()">
+					<option></option>
+					<option style="color:red;">A person with dementia – any type</option>
+					<option> A person with Parkinson's Disease </option>
+					<option> A person with ALS (Amyotrophic Lateral Sclerosis) </option>
+					<option style="color:red;"> Child with special needs </option>
+					<option> Someone with a terminal illness </option>
+					<option> Someone with a traumatic brain injury </option>
+					<option> Someone living with mental illness </option>
+				</select>

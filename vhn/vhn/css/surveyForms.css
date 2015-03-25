@@ -1,0 +1,68 @@
+#form_wrapper #headers
+{
+	text-align: center;
+}
+
+#form_wrapper #headers span
+{
+	font-size: 1.4em;
+	display: block;
+	padding: 5px;
+}
+
+#form_wrapper #headers span.main_heading
+{
+	color: rgb(137,137,186);
+}
+
+
+
+#form_wrapper form
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.ques
+{
+	margin: 5px auto;
+	padding: 5px;
+	min-width: 300px;
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.ques span
+{
+	font-size: 1.3em;
+	display: block;
+	padding: 5px;
+	font-weight: bold;
+}
+
+div.ques label
+{
+	display: block;
+	margin-left: 10px;
+	font-size: 1.2em;
+}
+
+div.ques input[type="text"]
+{
+	max-width: 200px;
+	margin-left: 10px;
+	font-size: 1.2em;
+	font-size: .9em !important;
+
+	border: 2px inset ;
+	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	
+	-ms-box-sizing:content-box;
+	-moz-box-sizing:content-box;
+	box-sizing:content-box;
+	-webkit-box-sizing:content-box; 
+}

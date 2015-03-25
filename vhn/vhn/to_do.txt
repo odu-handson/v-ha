@@ -1,0 +1,31 @@
+	Slow down ticker
+	Change sign me in to sign in
+	finger text to empowering _____
+	Caregiver as one word
+	when admin is clicked check all other in signup.php page
+	users should have access to their consent form
+	role to pre-register
+	all buttons should have same color
+	wrong username was sent in email when send credentials was clicked (not sure about this but noticed during meeting)
+	timestamp all notes (do not delete any notes) append note to previous note
+	change icon color if notes is available
+	clickable send email functionality in show pre users
+	take off city and add more icons in that space
+	overlap of content in viewusers1.php in ipad
+	back button in more info was still visible on homepage in ipad
+	sort the data in showpreusers
+	format telephone numbers
+	no need of view pre-caregivers
+	send to all email functionality
+	backup all emails sent and also info about which admin has sent
+	different icons to identify different roles
+	Other* option in the dropdown list of I am caregiver for
+	Give user to enter notes in the same page
+	Populate more info collected details in view pre caregivers
+	If interested in future studies Register here -- instead of more info (text would change and will be sent to us)
+	make email id the user id
+	reset password functionality
+	
+	
+	 
+	

@@ -1,0 +1,51 @@
+.finder_box
+{
+	width: 98%;
+	background-color: rgba(102, 139, 139, 0.6);
+	padding: 10px;
+	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	
+	color: brown;
+	font-weight: bold;
+}
+
+.finder_box .title
+{
+	font-size: 1.2em;
+}
+
+.finder_box .block
+{
+	padding: 5px;
+	display: block;
+}
+
+.finder_box span, .finder_box input[type=text]
+{
+	width: 50%;
+	padding: 3px;
+	min-width: 250px;
+	max-width: 250px;
+	text-align: right;
+}
+
+.finder_box input[type=text]
+{
+	margin-left: 20%;
+}
+
+#pre_user_wrapper
+{
+	padding: 10px;
+	width: 98%;
+	margin-left: auto;
+	margin-right: auto;
+}
+#pre_user_finder, #pre_user_content
+{
+	display: block;
+}
+

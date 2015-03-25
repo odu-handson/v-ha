@@ -1,0 +1,140 @@
+
+#main_content
+{
+	width: 98%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1%;
+	padding: 10px;
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (-webkit-min-device-pixel-ratio: 1)  
+{
+	#blogPosts, #blogActions 
+	{
+		display: block;
+		width: 100% !important;
+		max-width: 100% !important;
+		min-width: 100% !important;
+		padding: 10px;
+	}
+	p.link iframe
+	{
+		width: 90% !important;
+		height: 200px;
+	}
+}
+
+#blogPosts, #blogActions 
+{
+	display: inline-block;
+	float: right;
+}
+
+#blogPosts
+{
+	width: 78%;
+	/* max-width: 720px; !important; */
+}
+
+#blogActions 
+{
+	padding: 10px;
+	vertical-align: top;
+	width: 18%;
+	max-width: 230px;
+	background-color: #fff;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	font-size: 1em;
+}
+
+#blogActions h2
+{
+	margin-left: 10px;
+	font-size: 0.9em;
+}
+
+.blogPost
+{
+	background: #fff;
+	padding: 0.5em;
+	border-radius: 5px;
+	width: 90%;
+	line-height: 1em;
+	margin-bottom: 2em;
+	box-shadow: 0px 0px 2px #444;
+}
+
+.blogPost h2
+{
+	font-size: 1em;
+	color: lightblue !important;
+}
+
+.blogPost .dateLine
+{
+	font-size: 0.7em;
+	display: table !important;
+}
+
+p.answer
+{
+	font-size: 0.8em;
+}
+
+p.link iframe
+{
+	width: 70% !important;
+}
+
+
+
+.blogPost .question, .blogPost .dateLine, .blogPost .answer, .blogPost .link
+{
+	display: block;
+	width: 100%;
+}
+
+.blogPost .dateLine span
+{
+	display: table-cell;
+	width: 33% !important;
+	font-weight: bold;
+}
+
+.blogPost .dateLine span.date
+{
+	text-align: left !important;
+}
+
+.blogPost .dateLine span.answered_by
+{
+	text-align: right !important;
+	font-style: italic;
+}
+
+.blogPost .dateLine img
+{
+	width: 22px;
+	height: 22px;
+}
+
+#blogActions ul
+{
+	list-style-type: none;
+	margin:0;
+	padding:2px;
+	margin-left: 1.2em;
+}
+
+#blogActions ul li
+{
+	font-size: 0.8em;
+	cursor: pointer;
+}

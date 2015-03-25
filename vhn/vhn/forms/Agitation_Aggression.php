@@ -1,0 +1,301 @@
+
+<!--<link rel="stylesheet" type="text/css" href="extra.css">-->
+<link rel="stylesheet" type="text/css" href="css/surveyForms.css">
+ 
+ 
+	<script>
+	
+	function radioEvaluate1(x)
+ {
+	for (var i = 0, length = x.length; i < length; i++) 
+	{
+		if (x[i].checked) 
+		{
+		return x[i].value;
+		break;
+		}
+	}
+ }
+	
+	
+	function onEvaluate()
+	{
+	
+	
+		var error = 1;
+		var errorFields = "";
+	
+	var t1 = document.getElementsByName('f8q1');
+	var q1 = radioEvaluate1(t1);
+	var t2 = document.getElementsByName('f8q2');
+	var q2 = radioEvaluate1(t2);
+	var t3 = document.getElementsByName('f8q3');
+	var q3 = radioEvaluate1(t3);
+	var t4 = document.getElementsByName('f8q4');
+	var q4 = radioEvaluate1(t4);
+	var t5 = document.getElementsByName('f8q5');
+	var q5 = radioEvaluate1(t5);
+	var t6 = document.getElementsByName('f8q6');
+	var q6 = radioEvaluate1(t6);
+	var t7 = document.getElementsByName('f8q7');
+	var q7 = radioEvaluate1(t7);
+	var t8 = document.getElementsByName('f8q8');
+	var q8 = radioEvaluate1(t8);
+	var t9 = document.getElementsByName('f8q9');
+	var q9 = radioEvaluate1(t9);
+	var t10 = document.getElementsByName('f8q10');
+	var q10 = radioEvaluate1(t10);
+	var t11 = document.getElementsByName('f8q11');
+	var q11 = radioEvaluate1(t11);
+	
+	
+	
+
+	if(q1 == undefined)
+	{
+	error = 0;
+				errorFields = errorFields+" question 1, ";
+	}
+	
+	if(q2 == undefined)
+	{
+	error = 0;
+				errorFields = errorFields+" question 2, ";
+	}
+	
+	if(q3 == undefined)
+	{
+	error = 0;
+				errorFields = errorFields+" question 3, ";
+	}
+	
+	if(q4 == undefined)
+	{
+	error = 0;
+				errorFields = errorFields+" question 4, ";
+	}
+	
+	if(q5 == undefined)
+	{
+	error = 0;
+				errorFields = errorFields+" question 5, ";
+	}
+	
+	if(q6 == undefined)
+	{
+	error = 0;
+				errorFields = errorFields+" question 6, ";
+	}
+	
+	if(q7 == undefined)
+	{
+	error = 0;
+				errorFields = errorFields+" question 7, ";
+	}
+	
+	if(q8 == undefined)
+	{
+	error = 0;
+				errorFields = errorFields+" question 8, ";
+	}
+	 if(q9 == undefined)
+	{
+error = 0;
+				errorFields = errorFields+" question 9, ";
+	}
+	
+	if(q10 == undefined)
+	{
+	error = 0;
+				errorFields = errorFields+" question 10, ";
+	}
+	
+	if(q11 == undefined)
+	{
+	error = 0;
+				errorFields = errorFields+" question 11, ";
+	}
+	
+		
+		if(error == 0)
+	{
+		
+		x=confirmSubmit(errorFields.substring(0,errorFields.length - 2)+" are not answered! \n Click Ok if you still wish to submit.");
+			
+				if(x==1)
+				{
+					var uid='<?php echo $_SESSION["uid"];?>';    
+					var finalans =  q1 + ";" + q2 + ";" + q3+ ";" + q4 + ";" + q5 + ";" + q6 + ";" + q7 + ";" + q8 + ";" + q9 + ";" + q10 + ";" + q11 + ";"; 
+					finalans = encodeURIComponent(finalans);
+					var url="forms/enterSurveyAnswers.php?uid=" + uid + "&ans=" + finalans + "&sid=6";
+					window.location=url;			
+				}
+		
+	}
+	
+	else
+	{
+	 
+		var uid = '<?php echo $_SESSION["uid"];?>';
+		
+		
+		 var finalans =  q1 + ";" + q2 + ";" + q3+ ";" + q4 + ";" + q5 + ";" + q6 + ";" + q7 + ";" + q8 + ";" + q9 + ";" + q10 + ";" + q11 + ";"; 
+		 
+		 
+		 var url="forms/enterSurveyAnswers.php?uid="+uid+"&ans="+finalans+"&sid=6";
+		
+	 window.location=url;
+	  $(".AlertBox").show();
+				$(".alertMessage").html("You have successfully finished all the surveys!");
+				
+				$(".errorNote").show();
+				
+				setTimeout(function()
+				{
+					$(".AlertBox").hide();
+				}, 10000);
+	 
+	}
+
+	}
+	
+	function confirmSubmit(displayMsg)
+	{
+	
+		//alert(displayMsg);
+		/* $(".AlertBox2").show();
+		$(".displayMsg").html(errorFields.substring(0,errorFields.length - 2)+" are mandatory!");
+		$(".errorNote2").show(); */
+		
+		if(confirm(displayMsg))
+		return 1;
+		else 
+		return 0;
+		
+		
+	}
+ 
+ 
+	</script>
+<style>
+	.Note
+	{
+		color: rgb(137,137,186);
+	}
+	.Note, .errorNote
+	{
+		font-style: italic;
+	}
+	.errorNote
+	{
+		color: red;
+	}
+	.mandatory
+	{
+		font-weight: bold;
+	}
+	</style>
+<div id="form_wrapper">
+<div id="headers">
+<span class="main_heading"> AGITATION/AGGRESSION </span>
+</div>
+
+
+<form onSubmit="return onEvaluate()" type="POST">
+
+<div class="ques"><span>
+1. Does the patient have periods when he/she refuses to cooperate or won't let people help him/her? Is he/she hard to handle? </span>
+<label><input type="radio" name ="f8q1" id ="f8q1" value="op1"/>Yes (if yes, please proceed to subquestions) </label>
+<label><input type="radio" name ="f8q1" id ="f8q1" value="op2"/>No (if no, please proceed to next screening question) </label>
+<label><input type="radio" name ="f8q1" id ="f8q1" value="op3"/>N/A </label><br/>
+
+</div>
+
+<div class="ques"><span>
+2. Does the patient get upset with those trying to care for him/her or resist activities such
+as bathing or changing clothes?
+</span>
+<label><input type="radio" name ="f8q2" id ="f8q1" value="op1"/>Yes </label>
+<label><input type="radio" name ="f8q2" id ="f8q1" value="op2"/>No</label>
+
+</div>
+
+<div class="ques"><span>
+3. Is the patient stubborn, having to have things his/her way? </span>
+<label><input type="radio" name ="f8q3" id ="f8q1" value="op1"/>Yes </label>
+<label><input type="radio" name ="f8q3" id ="f8q1" value="op2"/>No</label>
+
+</div>
+
+<div class="ques"><span>
+4. Does the patient have any other behaviors that make him/her hard to handle?  </span>
+<label><input type="radio" name ="f8q4" id ="f8q4" value="op1"/>Yes </label>
+<label><input type="radio" name ="f8q4" id ="f8q4" value="op2"/>No </label>
+
+</div>
+
+<div class="ques"><span>
+5. Does the patient shout or curse angrily? </span>
+<label><input type="radio" name ="f8q5" id ="f8q5" value="op1"/>Yes </label>
+<label><input type="radio" name ="f8q5" id ="f8q5" value="op2"/>No</label>
+
+</div>
+
+<div class="ques"><span>
+6. Does the patient slam doors, kick furniture, throw things?</span>
+<label><input type="radio" name ="f8q6" id ="f8q6" value="op1"/>Yes </label>
+<label><input type="radio" name ="f8q6" id ="f8q6" value="op2"/>No</label>
+
+
+</div>
+
+
+<div class="ques"><span>
+7. Does the patient attempt to hurt or hit others?  </span>
+<label><input type="radio" name ="f8q7" id ="f8q7" value="op1"/>Yes </label>
+<label><input type="radio" name ="f8q7" id ="f8q7" value="op2"/>No</label>
+</div>
+
+
+<div class="ques"><span>
+8. Does the patient have any other aggressive or agitated behaviors? </span>
+<label><input type="radio" name ="f8q8" id ="f8q8" value="op1"/>Yes </label>
+<label><input type="radio" name ="f8q8" id ="f8q8" value="op2"/>No</label>
+</div>
+
+<div id="headers"><h2><u> If the screening question is confirmed, determine the frequency and severity of the agitation/aggression. </u></h2></div>
+
+
+<div class="ques"><span>
+9. Frequency </span>
+<label><input type="radio" name ="f8q9" id ="f8q9" value="op1"/>Rarely - less than once per week. </label>
+<label><input type="radio" name ="f8q9" id ="f8q9" value="op2"/>Sometimes - about once per week.</label>
+<label><input type="radio" name ="f8q9" id ="f8q9" value="op3"/>Often - several times per week but less than every day.</label>
+<label><input type="radio" name ="f8q9" id ="f8q9" value="op4"/>Very often - once or more per day. </label>
+</div>
+
+
+<div class="ques"><span>
+10. Severity:
+ </span>
+<label><input type="radio" name ="f8q10" id ="f8q10" value="op1"/>Mild - agitation is disruptive but can be managed with redirection or reassurance. </label>
+<label><input type="radio" name ="f8q10" id ="f8q10" value="op2"/>Moderate - agitation is disruptive and difficult to redirect or control.</label>
+<label><input type="radio" name ="f8q10" id ="f8q10" value="op3"/>Severe - agitation is very disruptive and a major source of difficulty; there may be a threat of personal harm. Medications are often required.</label>
+</div>
+
+<div class="ques"><span>
+11. Distress: How emotionally distressing do you find this behavior? </span>
+<label><input type="radio" name ="f8q11" id ="f8q11" value="op1"/>Not at all. </label>
+<label><input type="radio" name ="f8q11" id ="f8q11" value="op2"/>Minimally (almost no change in work routine). </label>
+<label><input type="radio" name ="f8q11" id ="f8q11" value="op3"/>Moderately (disrupts work routine, requires time rebudgeting). </label>
+<label><input type="radio" name ="f8q11" id ="f8q11" value="op4"/>Severely (disruptive, upsetting to staff and other residents, major time infringement) </label>
+<label><input type="radio" name ="f8q11" id ="f8q11" value="op5"/>Very Severely or Extremely(very disruptive, major source of distress for staff and other
+residents, requires time usually devoted to other residents or activities
+ </label>
+
+</div>
+
+
+<input style="margin-left: 50%;" type="button" class="button"  value="submit" id="submit" onclick="onEvaluate()"/>
+</form>
+</div>

@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Highcharts Example</title>
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<!--<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>-->
+		<script type="text/javascript">
+			$(function () {
+				alert("asdhga hdgjhgasdjgjhg");
+				var dataSeries = [];
+				
+				$.ajax({
+					dataType: "json",
+					url: 'data.json',
+					async: false,
+					success: function(data)
+					{
+						alert(data);
+					}
+				});
+				
+				$.getJSON('data.json', function (data) {
+					dataSeries = data;
+					console.log("Data is " + data);
+					alert("asdaksjdhjashdhkjas");
+					//var chart = new Highcharts.Chart(options);
+				});
+				$('#container').highcharts({
+					chart: {
+						type: 'column'
+					},
+					title: {
+						text: 'Sleep Tracker '
+					},
+					subtitle: {
+						text: ''
+					},
+					xAxis: {
+						type: 'datetime',
+						dateTimeLabelFormats: { // don't display the dummy year
+							second: '%H:%M:%S',
+							minute: '%H:%M',
+							hour: '%H:%M'
+						}
+					},
+					yAxis: {
+						title: {
+							text: 'Disturbance',
+
+						},
+
+
+
+						min: 0
+					},
+					tooltip: {
+						formatter: function () {
+							return '<b>' + this.series.name + '</b><br/>' +
+								Highcharts.dateFormat('%e. %b', this.x) + ': ' + this.y + ' m';
+						}
+					},
+					series: dataSeries
+				});
+			});
+		</script>
+	</head>
+	<body>
+<script src="../../js/highcharts.js"></script>
+<script src="../../js/modules/exporting.js"></script>
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+	</body>
+</html>

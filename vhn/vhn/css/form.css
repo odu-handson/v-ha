@@ -1,0 +1,175 @@
+.form_container
+{
+	width: 100%;
+	text-align: center;
+	border-radius: 12px;
+	overflow: hidden;
+}
+
+#ssForm_div
+{
+	display: block;
+	width: 100%;
+	min-width: 660px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#form_title
+{
+	/*background: #FFA;*/
+	color: rgb(137,137,186);
+	padding: 10px;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+.forms
+{
+	background: #FFF;
+	color: gray;
+	/* color: rgb(137,137,186); */
+	border-radius: 12px;
+	padding: 10px;
+}
+
+/* legend
+{
+	text-align: left;
+	color: #96c;
+	border-radius: 12px;
+} */
+
+textarea
+{
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	border: 2px inset;
+}
+
+span, label
+{
+	font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+}
+
+#form_title
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.sub_headings
+{
+	display: block;
+	text-align: left !important;
+}
+
+.signature
+{
+	display: block;
+	height: 200px;
+	width: 96%;
+	/* border: 3px solid red; */
+}
+
+.sub_headings1
+{
+	display: block;
+	text-align: left !important;
+	margin-left: 15%; 
+	color: darkgray;
+	/* color: rgb(137,137,186); */
+	font-weight: bold;
+	font-size: 1.2em;
+	padding-top: 5px;
+}
+
+.error
+{
+	border: groove red 2px !important;
+}
+
+.formDivBox
+{
+	display: block;
+	padding: 10px;
+}
+
+#general_info_box, #contact_container, #payment_container
+{
+	width: 100%;
+	max-width: 520px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#moreInformationForm  #general_info_box span, #studyScreenForm #contact_container span, #payment_container span
+{
+	width: 35%;
+	text-align: right;
+	margin-right: 20px;
+}
+
+.forms label
+{
+	display: block;
+	text-align: left;
+	font-size: 1em;
+	margin: auto 0;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 200px;
+}
+
+.forms input[type="text"], #moreInformationForm  #general_info_box span, #studyScreenForm #contact_container span, .forms input[type="email"], .forms select
+{
+	display: inline-block;
+	font-size: 1em;
+	padding: 5px;
+}
+
+.forms input[type="text"], .forms input[type="email"], .forms select
+{
+	width: 60%;
+	max-width: 200px;
+	font-size: .9em !important;
+
+	border: 2px inset ;
+	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	
+	-ms-box-sizing:content-box;
+	-moz-box-sizing:content-box;
+	box-sizing:content-box;
+	-webkit-box-sizing:content-box; 
+	
+}
+
+/* .forms input[type="submit"], .forms input[type="button"]
+{
+	font-size: 1em;
+	font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+	height: 30px;
+	width: 100px;
+	padding: 5px;
+	
+	color: green;
+} */
+
+#inclusion_container span
+{
+	font-weight: normal !important;
+	color: gray;
+	/* color: rgb(137,137,186); */
+	font-size: 1em !important;
+}
+
+#studyScreenForm input[type="button"]
+{
+	width: 180px;
+}

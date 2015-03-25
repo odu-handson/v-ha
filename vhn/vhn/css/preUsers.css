@@ -1,0 +1,107 @@
+#main_wrapper
+{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.pre_user_box
+{
+	-webkit-box-shadow: 0 0 10px #fff;
+    -moz-box-shadow: 0 0 10px #fff;
+	box-shadow: 0 0 10px #fff;
+	
+	/* -webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px; */
+	
+	-webkit-border-top-left-radius: 8px;
+	-moz-border-top-left-radius: 8px;
+	border-top-left-radius: 8px;
+	
+	-webkit-border-top-right-radius: 8px;
+	-moz-border-top-right-radius: 8px;
+	border-top-right-radius: 8px;
+	
+	-webkit-border-bottom-left-radius: 6px;
+	-moz-border-bottom-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+	
+	-webkit-border-bottom-right-radius: 6px;
+	-moz-border-bottom-right-radius: 6px;
+	border-top-bottom-right-radius: 6px;
+	
+	display: inline-block;
+	position: relative;
+	text-align: left;
+	
+	width: 90%;
+	
+	max-width: 400px;
+	margin: 10px;
+	
+	background: #fff;
+	
+	
+	
+}
+
+.pre_user_box span.title
+{
+	display: block;
+	opacity: 0.9;
+	background-color: brown;
+	color: lightgray;
+	font-weight: bold;
+	width: auto;
+	min-height: 30px;
+	-webkit-border-top-left-radius: 8px;
+	-moz-border-top-left-radius: 8px;
+	border-top-left-radius: 8px;
+	
+	-webkit-border-top-right-radius: 8px;
+	-moz-border-top-right-radius: 8px;
+	border-top-right-radius: 8px;
+	
+	padding: 5px;
+	margin-bottom: 10px;
+	font-size: 1.2em;
+	padding-left: 15px;
+}
+
+.pre_user_box span.detail 
+{
+	display: block;
+	margin-left: 30px;
+	padding: 2px;
+	color: gray;
+}
+
+.pre_user_box span.detail strong
+{
+	display: inline-block;
+	text-align: left;
+	max-width: 200px;
+	width: 200px;
+}
+
+.pre_user_box_buttons
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	margin-top: 20px;
+	border-top: 3px solid lightgray;
+}
+
+.pre_user_box_buttons span.submit_button, .pre_user_box_buttons span.cancel_button
+{
+	display: inline-block !important;
+	text-align: center;
+	color: #668B8B;
+	font-weight: bold;
+	padding: 10px;
+	cursor: pointer;
+	font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+}
